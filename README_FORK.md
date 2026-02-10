@@ -4,7 +4,7 @@ A personal fork of [antfu](https://github.com/antfu)'s [File Nesting Config for 
 
 ## Changes
 
-- Env files (`.env.*`, `.envrc`, `*.env`, `env.d.ts`) are no longer nested under framework (or Deno) configs. They do still self-nest under `.env`.
+- Env files (`.env.*`, `.envrc`, `*.env`, `env.d.ts`) are no longer nested under framework (or Deno) configs. They _do_ still self-nest under `.env`. 917a2e66b2ef3416c39f0635c6713f291f75cf56
 
 ## Usage
 
