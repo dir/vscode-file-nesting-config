@@ -132,6 +132,23 @@ const env = [
   'env.d.ts',
 ]
 
+// For .env.local: we can't reuse `*.env` because VSCode conflicts with the
+// `.env` key's `*.env` pattern. Instead we enumerate `*<char>.env` for every
+// valid filename character, which avoids the glob collision. Super hacky
+// workaround, but it _does_ work pretty well.
+//
+// @TODO: This still only allows us to _also_ nest under .env.local when .env is not present.
+//        I would like to somehow make this work with .env.$(NODE_ENV), .env.$(NODE_ENV).local
+//        alongside .env.local, with some order of precedence.
+const envLocalCharSet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-+~'
+const envLocalStarEnvPatterns = [...envLocalCharSet].map(c => `*${c}.env`)
+const envLocal = [
+  ...envLocalStarEnvPatterns,
+  '.env.*',
+  '.envrc',
+  'env.d.ts',
+]
+
 // @keep-sorted
 const workspaces = [
   '.gitmojirc.json',
@@ -613,6 +630,7 @@ const full = sortObject({
   ...base,
   '.agent': stringify(agentsConfigs),
   '.env': stringify(env),
+  '.env.local': stringify(envLocal),
   'Dockerfile': stringify(docker),
   'package.json': stringify(packageJSON),
   'rush.json': stringify(packageJSON),

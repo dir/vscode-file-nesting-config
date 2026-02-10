@@ -30,7 +30,7 @@ Open your VS Code, bring up your `settings.json`, copy-n-paste the snippet below
 <!-- eslint-skip -->
 
 ```jsonc
-  // updated 2026-02-10 21:55
+  // updated 2026-02-10 23:01
   // https://github.com/dir/vscode-file-nesting-config
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
@@ -38,6 +38,7 @@ Open your VS Code, bring up your `settings.json`, copy-n-paste the snippet below
     ".agent": ".agent, .claude, .cline, .codebuddy, .codex, .commandcode, .continue, .crush, .cursor, .factory, .gemini, .goose, .junie, .kilocode, .kiro, .kode, .mcpjam, .mux, .neovate, .opencode, .openhands, .pi, .pochi, .qoder, .qwen, .roo, .trae, .windsurf, .zencoder",
     ".clang-tidy": ".clang-format, .clangd, compile_commands.json",
     ".env": "*.env, .env.*, .envrc, env.d.ts",
+    ".env.local": "*+.env, *-.env, *0.env, *1.env, *2.env, *3.env, *4.env, *5.env, *6.env, *7.env, *8.env, *9.env, *A.env, *B.env, *C.env, *D.env, *E.env, *F.env, *G.env, *H.env, *I.env, *J.env, *K.env, *L.env, *M.env, *N.env, *O.env, *P.env, *Q.env, *R.env, *S.env, *T.env, *U.env, *V.env, *W.env, *X.env, *Y.env, *Z.env, *_.env, *a.env, *b.env, *c.env, *d.env, *e.env, *f.env, *g.env, *h.env, *i.env, *j.env, *k.env, *l.env, *m.env, *n.env, *o.env, *p.env, *q.env, *r.env, *s.env, *t.env, *u.env, *v.env, *w.env, *x.env, *y.env, *z.env, *~.env, .env.*, .envrc, env.d.ts",
     ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .lfsconfig, .mailmap, .git-blame*",
     ".project": ".classpath",
     "+layout.svelte": "+layout.ts,+layout.js,+layout.server.ts,+layout.server.js,+layout.gql",
