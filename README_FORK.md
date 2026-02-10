@@ -4,7 +4,7 @@ A personal fork of [antfu](https://github.com/antfu)'s [File Nesting Config for 
 
 ## Changes
 
-- Env files (`.env.*`, `.envrc`, `*.env`, `env.d.ts`) are no longer nested under framework (or Deno) configs. They _do_ still self-nest under `.env`. 917a2e66b2ef3416c39f0635c6713f291f75cf56
+- Env files (`.env.*`, `.envrc`, `*.env`, `env.d.ts`) are no longer nested under framework (or Deno) configs. They _do_ still self-nest under `.env`. ([`917a2e6`](https://github.com/dir/vscode-file-nesting-config/commit/917a2e66b2ef3416c39f0635c6713f291f75cf56))
 
 ## Usage
 
