@@ -1,5 +1,7 @@
-<sub><em>Anthony's</em></sub>
+<sub><em>Luke Davis ([@dir](https://github.com/dir))'s fork of Anthony ([@antfu](https://github.com/antfu))'s</em></sub>
 <h1>File Nesting Config<sup><em> for VS Code</em></sup></h1>
+
+My personal fork of [antfu/vscode-file-nesting-config](https://github.com/antfu/vscode-file-nesting-config). See [README_FORK.md](./README_FORK.md) for information.
 
 ![](https://user-images.githubusercontent.com/11247099/157142238-b00deecb-8d56-424f-9b20-ef6a6f5ddf99.png)
 
