@@ -18,7 +18,8 @@ Install the [File Nesting Updater](https://marketplace.visualstudio.com/items?it
 "fileNestingUpdater.upstreamBranch": "fork",
 ```
 
-After updating your settings, you may want to manually run the `File Nesting Updater: Update config now` VSCode command palette action.
+> [!IMPORTANT]
+> After updating your VSCode settings, you may want to manually execute the `File Nesting Updater: Update config now` command from the command palette to sync your editor with the fork settings.
 
 ### Manual
 
@@ -41,8 +42,11 @@ Refer to the [Update Manually](./README.md#update-manually) section of the origi
 4. On merge, the [`update`](.github/workflows/update.yml) GitHub Action automatically runs `update.mjs` and commits the regenerated config snippet in `README.md`.
 
 > [!NOTE]
-> Although it is handled automatically by the [`update`](.github/workflows/update.yml) Github Action workflow, you may still manually run `update.mjs` and commit the output.
+> Although handled automatically by the [`update`](.github/workflows/update.yml) Github Action, you may manually run `update.mjs` and commit the output.
 
 ### Syncing with Upstream
 
 Merge `main` into `fork` to pull in upstream updates.
+
+> [!TIP]
+> After making any changes to the fork, you may want to manually run the VSCode extension's update config command (as described [here](#vscode-extension)) to get the latest changes in your editor.
