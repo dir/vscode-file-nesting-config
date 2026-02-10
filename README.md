@@ -1,7 +1,7 @@
 <sub><em>Luke's</em></sub>
 <h1>File Nesting Config<sup><em> for VS Code</em></sup></h1>
 
-A personal fork of [antfu](https://github.com/antfu)'s [File Nesting Config for VS Code](https://github.com/antfu/vscode-file-nesting-config). 
+A personal fork of [antfu](https://github.com/antfu)'s [File Nesting Config for VS Code](https://github.com/antfu/vscode-file-nesting-config).
 
 See the [fork README](./README_FORK.md) ([`README_FORK.md`](./README_FORK.md)) for an overview of specific changes & development information.
 

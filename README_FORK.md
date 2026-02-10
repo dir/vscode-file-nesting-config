@@ -1,6 +1,6 @@
 # Fork
 
-A personal fork of [antfu](https://github.com/antfu)'s [File Nesting Config for VS Code](https://github.com/antfu/vscode-file-nesting-config). 
+A personal fork of [antfu](https://github.com/antfu)'s [File Nesting Config for VS Code](https://github.com/antfu/vscode-file-nesting-config).
 
 ## Changes
 
@@ -11,9 +11,11 @@ A personal fork of [antfu](https://github.com/antfu)'s [File Nesting Config for 
 ### VSCode Extension
 Install the [File Nesting Updater](https://marketplace.visualstudio.com/items?itemName=antfu.file-nesting) extension and add the following to your VSCode `settings.json`:
 
-```json
+<!-- eslint-skip -->
+
+```jsonc
 "fileNestingUpdater.upstreamRepo": "dir/vscode-file-nesting-config",
-"fileNestingUpdater.upstreamBranch": "fork"
+"fileNestingUpdater.upstreamBranch": "fork",
 ```
 
 After updating your settings, you may want to manually run the `File Nesting Updater: Update config now` VSCode command palette action.
