@@ -1,6 +1,6 @@
 # Fork
 
-A personal fork of [antfu/vscode-file-nesting-config](https://github.com/antfu/vscode-file-nesting-config).
+A personal fork of [antfu](https://github.com/antfu)'s [File Nesting Config for VS Code](https://github.com/antfu/vscode-file-nesting-config). 
 
 ## Changes
 
