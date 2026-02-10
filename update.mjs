@@ -288,7 +288,6 @@ const libraries = [
   'vuetify.config.*',
   'webpack.config.*',
   'windi.config.*',
-  ...env,
   ...testingTools,
   ...tsconfig,
 ]
@@ -470,7 +469,6 @@ const denoRuntime = [
   'import-map.json',
   'deno.lock',
   ...tsconfig,
-  ...env,
 ]
 
 const sqlite = [
