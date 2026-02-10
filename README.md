@@ -30,8 +30,8 @@ Open your VS Code, bring up your `settings.json`, copy-n-paste the snippet below
 <!-- eslint-skip -->
 
 ```jsonc
-  // updated 2026-02-10 21:00
-  // https://github.com/antfu/vscode-file-nesting-config
+  // updated 2026-02-10 21:55
+  // https://github.com/dir/vscode-file-nesting-config
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
