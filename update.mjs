@@ -672,7 +672,7 @@ fs.writeFileSync('README.md', fs.readFileSync('README.md', 'utf-8')
     return `
 \`\`\`jsonc
   // updated ${today}
-  // https://github.com/antfu/vscode-file-nesting-config
+  // https://github.com/dir/vscode-file-nesting-config
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": ${body.trimStart()},
