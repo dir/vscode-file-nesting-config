@@ -285,6 +285,7 @@ const libraries = [
   '.terserrc*',
   'babel.config.*',
   'capacitor.config.*',
+  'components.json',
   'content.config.*',
   'contentlayer.config.*',
   'cssnano.config.*',
