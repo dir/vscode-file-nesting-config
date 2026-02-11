@@ -603,6 +603,7 @@ function sortObject(obj, fn = (a, b) => a.localeCompare(b)) {
 }
 
 /**
+ * Convert a string to title case
  * @param {string} str
  */
 function toTitleCase(str) {
