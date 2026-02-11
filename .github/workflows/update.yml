@@ -2,6 +2,7 @@ on:
   push:
     branches:
       - main
+      - fork
     paths:
       - update.mjs
 
@@ -19,3 +20,14 @@ jobs:
         with:
           commit_message: 'chore: update'
           file_pattern: README.md
+  purge-jsdelivr-cache:
+    needs: update
+    runs-on: ubuntu-latest
+    steps:
+      - uses: egad13/purge-jsdelivr-cache@v1
+        with:
+          attempts: 3
+          url: |
+            https://cdn.jsdelivr.net/gh/dir/vscode-file-nesting-config@fork/README.md
+            https://cdn.jsdelivr.net/gh/dir/vscode-file-nesting-config@latest/README.md
+            https://cdn.jsdelivr.net/gh/dir/vscode-file-nesting-config/README.md
