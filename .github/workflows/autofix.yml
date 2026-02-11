@@ -4,11 +4,9 @@ on:
   push:
     branches:
       - main
-      - fork
   pull_request:
     branches:
       - main
-      - fork
 permissions:
   contents: read
 
