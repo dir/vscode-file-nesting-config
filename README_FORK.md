@@ -9,6 +9,7 @@ A personal fork of [antfu](https://github.com/antfu)'s [File Nesting Config for 
 In no particular order, this fork makes the following changes to the nesting config:
 
 - Adds the [shadcn/ui `components.json`](https://ui.shadcn.com/docs/components-json) file to the nesting config. ([`fd6ad81`](https://github.com/dir/vscode-file-nesting-config/commit/fd6ad819d21a46cb430973eec4c8378d3beb51f9))
+- Adds [mise-en-place](https://mise.jdx.dev) config files. ([`708b5d8`](https://github.com/dir/vscode-file-nesting-config/commit/708b5d8d1087bf1257689b35d8103e29ef14e897))
 - Env files
   - No longer nest under framework (or Deno) configs. ([`917a2e6`](https://github.com/dir/vscode-file-nesting-config/commit/917a2e66b2ef3416c39f0635c6713f291f75cf56))
   - Will also be nested under `.env.local` in addition to `.env` (with `.env` taking precedence, if present). ([`140c9cd`](https://github.com/dir/vscode-file-nesting-config/commit/140c9cd93e9e3741f695d639e025d061616f35cd))
