@@ -507,6 +507,11 @@ const sanity = [
 ]
 
 // @keep-sorted
+const mise = [
+  'mise.*.toml',
+]
+
+// @keep-sorted
 const agents = [
   '.clinerules',
   '.cursorrules',
@@ -659,6 +664,7 @@ const full = sortObject({
   'tsconfig.json': stringify(['tsconfig.*.json', 'tsconfig*.tsbuildinfo']),
   '*.db': stringify(sqlite),
   '*.razor': stringify(razor),
+  'mise.toml': stringify(mise),
   'sanity.config.*': stringify(sanity),
   'AGENTS.md': stringify(agents),
   ...Object.fromEntries(Object.entries(frameworks).map(([n, i]) => [n, stringify([...i, ...libraries])])),
